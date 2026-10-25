@@ -1,0 +1,10 @@
+{"id": 1, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Synthetic Town is located in Example Country.", "evidence": [[[100, 200, "Synthetic_Town", 0]]]}
+{"id": 2, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Synthetic Town was founded in 1999.", "evidence": [[[101, 201, "Synthetic_Town", 2], [101, 202, "Example_Country", 5]], [[102, 203, "Synthetic_Town", 3]]]}
+{"id": 3, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Synthetic Town has a famous bakery.", "evidence": [[[103, null, null, null]]]}
+this line is not json
+{"id": 5, "label": "SUPPORTS"}
+{"id": 6, "claim": "Unlabelled synthetic claim from a blind test split."}
+{"id": 7, "label": "MAYBE", "claim": "Synthetic claim with an unknown label."}
+[1, 2, 3]
+
+{"id": 9, "claim": "Flattened format synthetic claim.", "label": "REFUTES", "evidence_annotation_id": 5, "evidence_id": 6, "evidence_wiki_url": "Synthetic_Page", "evidence_sentence_id": 1}

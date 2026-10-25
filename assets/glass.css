@@ -1,0 +1,111 @@
+/* Glass + minimal: one soft gradient backdrop, frosted translucent surfaces, quiet type.
+   Color tokens (--bg, --glass-*, --blob-*) are set per light/dark mode by app.py. */
+
+.stApp {
+  background:
+    radial-gradient(1100px 620px at 8% -8%, var(--blob-1), transparent 62%),
+    radial-gradient(900px 560px at 96% 6%, var(--blob-2), transparent 60%),
+    radial-gradient(1000px 700px at 50% 112%, var(--blob-3), transparent 62%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="stMainBlockContainer"] { max-width: 1180px; padding-top: 2.5rem; }
+
+/* ---------------------------------------------------------------- surfaces */
+[class*="st-key-glass"],
+[data-testid="stExpander"] details,
+[data-testid="stMetric"] {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 18px;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+}
+[class*="st-key-glass"] { padding: 1.2rem 1.35rem; }
+[data-testid="stMetric"] { padding: 0.85rem 1rem; }
+[data-testid="stMetricLabel"] { opacity: 0.7; }
+[data-testid="stExpander"] details summary { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+[data-testid="stExpander"] details summary:hover { background: var(--glass-hover); border-radius: 18px; }
+
+/* hero */
+.st-key-glass_hero { padding: 1.8rem 2rem; }
+.st-key-glass_hero h1 {
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  background: linear-gradient(115deg, var(--text-strong) 30%, var(--accent) 70%, var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ----------------------------------------------------------------- sidebar */
+[data-testid="stSidebar"] {
+  background: var(--glass-bg-strong) !important;
+  border-right: 1px solid var(--glass-border);
+  backdrop-filter: blur(26px) saturate(150%);
+  -webkit-backdrop-filter: blur(26px) saturate(150%);
+}
+[data-testid="stSidebar"] > div:first-child { background: transparent; }
+
+/* -------------------------------------------------------------------- tabs */
+[data-testid="stTabs"] [role="tablist"] {
+  gap: 0.25rem;
+  padding: 0.3rem;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+[data-testid="stTabs"] [role="tab"] { padding: 0.45rem 1.05rem; border-radius: 999px; }
+[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
+  background: var(--tab-active);
+  box-shadow: 0 2px 10px rgba(15, 18, 40, 0.10), inset 0 0 0 1px var(--line);
+}
+/* the pill replaces the underline indicator */
+[data-testid="stTabs"] .react-aria-SelectionIndicator { display: none; }
+[data-testid="stTabs"] [role="tab"] { border-bottom: none !important; }
+
+/* ------------------------------------------------------------ fields, buttons */
+[data-baseweb="input"], [data-baseweb="textarea"], [data-baseweb="select"] > div {
+  background: var(--field-bg) !important;
+  border-color: var(--glass-border) !important;
+  backdrop-filter: blur(10px);
+}
+[data-baseweb="input"] input, [data-baseweb="textarea"] textarea { background: transparent !important; }
+
+[data-testid="stBaseButton-primary"] {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border: none;
+  box-shadow: 0 6px 22px var(--accent-glow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+[data-testid="stBaseButton-primary"]:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px var(--accent-glow);
+}
+[data-testid="stBaseButton-secondary"] {
+  background: var(--glass-bg);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ------------------------------------------------------------ data, alerts */
+[data-testid="stDataFrame"] { border-radius: 14px; overflow: hidden; }
+[data-testid="stAlert"] > div { border-radius: 14px; backdrop-filter: blur(10px); }
+
+.glass-mark { background: var(--mark); color: inherit; border-radius: 4px; padding: 0 2px; }
+
+@media (prefers-reduced-transparency: reduce) {
+  [class*="st-key-glass"], [data-testid="stExpander"] details, [data-testid="stMetric"],
+  [data-testid="stSidebar"], [data-testid="stTabs"] [role="tablist"] {
+    backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--bg);
+  }
+}

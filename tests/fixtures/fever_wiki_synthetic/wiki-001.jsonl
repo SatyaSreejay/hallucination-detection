@@ -1,0 +1,4 @@
+{"id": "Synthetic_Town", "text": "Synthetic Town is a town .", "lines": "0\tSynthetic Town is a town in Example Country .\tExample_Country\n1\t\n2\tSynthetic Town was founded in 1850 -LRB- by settlers -RRB- .\n3\tIt has a river ."}
+{"id": "Example_Country", "text": "Example Country is a country .", "lines": "0\tExample Country is a country .\n5\tIts capital is Sample City ."}
+{"id": "Unrelated_Page", "text": "x", "lines": "0\tUnrelated sentence ."}
+not json

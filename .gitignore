@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.ruff_cache/
+.streamlit/secrets.toml
+
+# datasets, caches and downloads stay local
+data/*
+!data/README.md
+!data/controlled_examples.json
+!data/examples/
+
+# model weights and checkpoints
+models/*
+!models/README.md
+*.safetensors
+*.bin
+*.pt
+
+# experiment outputs
+results/*
+!results/README.md

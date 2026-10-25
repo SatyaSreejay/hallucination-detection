@@ -1,0 +1,2 @@
+{"source_id": "s1", "task_type": "QA", "source": "synthetic", "source_info": {"question": "Tell me about Synthetic Town.", "passages": "Synthetic Town was founded in 1850. Synthetic Town has 3000 residents and a river."}, "prompt": "Answer using the passages."}
+{"source_id": "s2", "task_type": "Summary", "source": "synthetic", "source_info": "A short synthetic news article about quarterly sales figures.", "prompt": "Summarize."}

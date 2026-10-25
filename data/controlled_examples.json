@@ -1,0 +1,13 @@
+{
+  "_note": "Controlled Hallucination Test examples. Each pair was written and reviewed by hand (by the assistant that built this project) so that the false claim clearly contradicts the linked Wikipedia article. Re-check them against the articles before relying on them. They are test inputs, never LLM output.",
+  "examples": [
+    {"id": "malaria", "topic": "Malaria", "true_claim": "Malaria is caused by Plasmodium parasites.", "false_claim": "Malaria is caused by bacteria.", "transformation": "cause changed (parasite -> bacteria)", "reference_url": "https://en.wikipedia.org/wiki/Malaria"},
+    {"id": "eiffel", "topic": "Eiffel Tower", "true_claim": "The Eiffel Tower is located in Paris, France.", "false_claim": "The Eiffel Tower is located in Berlin, Germany.", "transformation": "location changed (Paris -> Berlin)", "reference_url": "https://en.wikipedia.org/wiki/Eiffel_Tower"},
+    {"id": "apollo11", "topic": "Apollo 11", "true_claim": "Neil Armstrong was the first person to walk on the Moon, in 1969.", "false_claim": "Neil Armstrong was the first person to walk on the Moon, in 1975.", "transformation": "date changed (1969 -> 1975)", "reference_url": "https://en.wikipedia.org/wiki/Apollo_11"},
+    {"id": "hamlet", "topic": "Hamlet", "true_claim": "Hamlet is a tragedy written by William Shakespeare.", "false_claim": "Hamlet is a tragedy written by Charles Dickens.", "transformation": "author changed (Shakespeare -> Dickens)", "reference_url": "https://en.wikipedia.org/wiki/Hamlet"},
+    {"id": "pacific", "topic": "Pacific Ocean", "true_claim": "The Pacific Ocean is the largest ocean on Earth.", "false_claim": "The Pacific Ocean is the smallest ocean on Earth.", "transformation": "relation inverted (largest -> smallest)", "reference_url": "https://en.wikipedia.org/wiki/Pacific_Ocean"},
+    {"id": "einstein", "topic": "Albert Einstein", "true_claim": "Albert Einstein was born in Ulm, Germany.", "false_claim": "Albert Einstein was born in Lisbon, Portugal.", "transformation": "birthplace changed (Ulm -> Lisbon)", "reference_url": "https://en.wikipedia.org/wiki/Albert_Einstein"},
+    {"id": "penicillin", "topic": "Penicillin", "true_claim": "Penicillin was discovered by Alexander Fleming in 1928.", "false_claim": "Penicillin was discovered by Marie Curie in 1928.", "transformation": "person changed (Fleming -> Curie)", "reference_url": "https://en.wikipedia.org/wiki/Penicillin"},
+    {"id": "boiling", "topic": "Water", "true_claim": "Water boils at 100 degrees Celsius at standard atmospheric pressure.", "false_claim": "Water boils at 50 degrees Celsius at standard atmospheric pressure.", "transformation": "quantity changed (100 -> 50)", "reference_url": "https://en.wikipedia.org/wiki/Boiling_point"}
+  ]
+}

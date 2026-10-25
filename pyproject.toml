@@ -1,0 +1,16 @@
+[project]
+name = "hallucination-detection"
+version = "0.1.0"
+description = "Research prototype: detect factual hallucinations in LLM answers via claim extraction, Wikipedia evidence and verification"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]

@@ -1,0 +1,5 @@
+{"id": "r1", "source_id": "s1", "model": "synthetic-model", "temperature": 0.7, "split": "test", "quality": "good", "response": "Synthetic Town was founded in 1850. It has 5000 residents.", "labels": [{"start": 39, "end": 57, "text": "has 5000 residents", "meta": "context says 3000", "label_type": "Evident Conflict", "implicit_true": false, "due_to_null": false}]}
+{"id": "r2", "source_id": "s1", "model": "synthetic-model", "temperature": 0.7, "split": "test", "quality": "good", "response": "Synthetic Town was founded in 1850.", "labels": []}
+{"id": "r3", "source_id": "s2", "model": "synthetic-model", "split": "train", "response": "The report covers sales.", "labels": [{"start": 4, "end": 10, "text": "report", "label_type": "Subtle Baseless Info"}]}
+{broken json
+{"id": "r5", "source_id": "missing", "split": "test", "response": 42}

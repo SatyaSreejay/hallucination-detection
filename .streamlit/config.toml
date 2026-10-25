@@ -1,0 +1,56 @@
+# Glass + minimal theme. Colors and type live here; the translucent surfaces and the
+# gradient backdrop are layered on top by assets/glass.css (injected from app.py).
+
+[theme]
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+codeFontSize = "0.85rem"
+baseFontSize = 15
+baseFontWeight = 400
+headingFontSizes = ["34px", "24px", "19px", "16px", "14px", "12px"]
+headingFontWeights = [650, 600, 600, 500, 500, 500]
+baseRadius = "12px"
+buttonRadius = "999px"
+linkUnderline = false
+showWidgetBorder = true
+showSidebarBorder = false
+
+[theme.light]
+primaryColor = "#5b5bd6"
+backgroundColor = "#f4f5fb"
+secondaryBackgroundColor = "#eceefa"
+codeBackgroundColor = "#eceefa"
+textColor = "#1c1d2b"
+linkColor = "#4f46e5"
+borderColor = "#dcdff0"
+greenColor = "#16a34a"
+redColor = "#dc2626"
+orangeColor = "#ea580c"
+violetColor = "#7c3aed"
+blueColor = "#4f46e5"
+grayColor = "#64748b"
+chartCategoricalColors = ["#5b5bd6", "#14b8a6", "#ec4899", "#f59e0b", "#7c3aed", "#ef4444", "#22c55e"]
+
+[theme.light.sidebar]
+backgroundColor = "#f4f5fb"
+secondaryBackgroundColor = "#eceefa"
+
+[theme.dark]
+primaryColor = "#7c7cf0"
+backgroundColor = "#0b0d17"
+secondaryBackgroundColor = "#161a2b"
+codeBackgroundColor = "#161a2b"
+textColor = "#e8e9f3"
+linkColor = "#a5b4fc"
+borderColor = "#262b40"
+greenColor = "#4ade80"
+redColor = "#f87171"
+orangeColor = "#fb923c"
+violetColor = "#a78bfa"
+blueColor = "#818cf8"
+grayColor = "#94a3b8"
+chartCategoricalColors = ["#818cf8", "#2dd4bf", "#f472b6", "#fbbf24", "#a78bfa", "#f87171", "#4ade80"]
+
+[theme.dark.sidebar]
+backgroundColor = "#0b0d17"
+secondaryBackgroundColor = "#161a2b"
